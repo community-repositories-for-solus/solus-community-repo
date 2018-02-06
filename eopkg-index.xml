@@ -1,0 +1,71 @@
+<PISI>
+    <Package>
+        <Name>smlnj-docs</Name>
+        <Summary xml:lang="en">Documentation for smlnj</Summary>
+        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
+programming language with associated libraries, tools, and documentation</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>BSD-3-Clause</License>
+        <History>
+            <Update release="1">
+                <Date>2018-02-06</Date>
+                <Version>110.82</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>969210</InstalledSize>
+        <PackageSize>173521</PackageSize>
+        <PackageHash>37a0ae5cac8ee1fbfba0f36d0ef3ca1695f8f79c</PackageHash>
+        <PackageURI>smlnj/smlnj-docs-110.82-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>smlnj</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>smlnj</Name>
+        <Summary xml:lang="en">Standard ML of New Jersey</Summary>
+        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
+programming language with associated libraries, tools, and documentation</Description>
+        <PartOf>programming.tools</PartOf>
+        <License>BSD-3-Clause</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="48">glibc-32bit</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-02-06</Date>
+                <Version>110.82</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>36167088</InstalledSize>
+        <PackageSize>10387058</PackageSize>
+        <PackageHash>b0ed837f2e5303b0dee5f30655b84700ca77ec76</PackageHash>
+        <PackageURI>smlnj/smlnj-110.82-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>smlnj</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+</PISI>

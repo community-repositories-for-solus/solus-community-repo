@@ -1,0 +1,62 @@
+name       : smlnj
+version    : 110.82
+release    : 1
+source     :
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/config.tgz              : ceff9288e8106d94ce813181d6f4c4da02e4abf808875b27b78d9f6258d016de
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/boot.x86-unix.tgz       : 89e66f5a7fe7c811877d3cec4c1e3e4eb909ecca905248c2bf5f7105e2a4f9a5
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/ckit.tgz                : 3db4e2aa95002698096b2e90c1979fedebb5c3ab0feacc374c0dfecbcb953632
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/cml.tgz                 : 092399af4825f0c352ed1cfe783bb42a44853fa8798bf8463e4279e41758d2ff
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/doc.tgz                 : 257c23c821e2d28d903ae144d32e4c2c03e112a5ecc381afe199d892dc7d9adc
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/ml-burg.tgz             : 7f9c300c2553bf95be7f8275bf159bfb1ac7c7e24a9921b375be15c8d6606ae9
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/ml-lex.tgz              : de7699715b0bbe1e9b67aa5bea5515dfe6aa0e5b2e74abe1f97168a8ad6a0ab5
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/ml-lpt.tgz              : fd107fcc3c51aa44b59f464bfb92bfff22131b18ddee29f361d01765f51ff286
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/MLRISC.tgz              : fb5b7e781ae2b7aef2c873bb778c08dad99b816e98d737116b79e7210213fbf2
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/ml-yacc.tgz             : 1ef667a170fa9c3ec87345f53b7579842c93342b4af8f8c10993551b55f4a366
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/nlffi.tgz               : 7789f2c2e2aee03664e69414385f09356a8779c4cf1af74caa8a49f1d913df6b
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/old-basis.tgz           : 9ac113318694b58f8f77533d391e065f408f21b529b1c1b77a203ac66ed378e9
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/runtime.tgz             : 39cff4308c4dea8ae59883be651478a49174ff0473edb67ff46420aaa2cddb71
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/smlnj-lib.tgz           : 2c008ebea14d193ecea4969dcff7001b107ec724bc05562b7dde1e3dd5d4d1ae
+    - http://smlnj.cs.uchicago.edu/dist/working/110.82/trace-debug-profile.tgz : 37a11feacb6ecd9e3d5a727fdd1bd2d0d908f25a03642f42b42bc61839bb29bf
+license    : BSD-3-Clause
+component  : programming.tools
+extract    : no
+emul32     : yes
+libsplit   : no
+summary    : Standard ML of New Jersey
+description: |
+    Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML '97
+    programming language with associated libraries, tools, and documentation
+patterns   :
+    - /usr/share/defaults/
+    - /usr/lib32/
+    - docs:
+        - /usr/share/man/
+        - /usr/share/smlnj/
+setup      : |
+    if [[ ! -z "${EMUL32BUILD}" ]]; then
+        for file in $sources/*.tgz
+        do
+            tar -xzf $file
+        done
+        #runtime and old-basis need to be inside base folder
+        mkdir $workdir/base
+        mv $workdir/runtime $workdir/base/
+        mv $workdir/old-basis $workdir/base/
+    fi
+build      : |
+    if [[ ! -z "${EMUL32BUILD}" ]]; then
+        cd $workdir/..
+        config/install.sh
+    fi
+install    : |
+    if [[ ! -z "${EMUL32BUILD}" ]]; then
+        install -d $installdir/%libdir%/smlnj
+        install -d $installdir/usr/share/
+        install -d $installdir/usr/share/smlnj
+        mv $workdir/../bin $installdir/%libdir%/smlnj/
+        mv $workdir/../lib $installdir/%libdir%/smlnj/
+        mv $workdir/../doc/man $installdir/usr/share/
+        mv $workdir/../doc/README $installdir/usr/share/smlnj/
+        mv $workdir/../doc/html $installdir/usr/share/smlnj/
+        install -Dm 00644 $pkgfiles/70-sml.sh $installdir/usr/share/defaults/etc/profile.d/70-sml.sh
+    fi
