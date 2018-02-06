@@ -1,38 +1,5 @@
 <PISI>
     <Package>
-        <Name>smlnj-docs</Name>
-        <Summary xml:lang="en">Documentation for smlnj</Summary>
-        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
-programming language with associated libraries, tools, and documentation</Description>
-        <PartOf>programming.docs</PartOf>
-        <License>BSD-3-Clause</License>
-        <History>
-            <Update release="1">
-                <Date>2018-02-06</Date>
-                <Version>110.82</Version>
-                <Comment>Packaging update</Comment>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>969210</InstalledSize>
-        <PackageSize>173521</PackageSize>
-        <PackageHash>37a0ae5cac8ee1fbfba0f36d0ef3ca1695f8f79c</PackageHash>
-        <PackageURI>smlnj/smlnj-docs-110.82-1-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>smlnj</Name>
-            <Packager>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>smlnj</Name>
         <Summary xml:lang="en">Standard ML of New Jersey</Summary>
         <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
@@ -62,6 +29,42 @@ programming language with associated libraries, tools, and documentation</Descri
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>smlnj</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>megasync-nautilus</Name>
+        <Summary xml:lang="en">Sync your files to your Mega account.</Summary>
+        <Description xml:lang="en">Easy automated syncing between your computers and your MEGA Cloud Drive.</Description>
+        <License>MEGA LIMITED CODE REVIEW LICENCE</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="44">nautilus-extension</Dependency>
+            <Dependency releaseFrom="48">glibc</Dependency>
+            <Dependency releaseFrom="42">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="5">
+                <Date>2018-02-06</Date>
+                <Version>3.6.0.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>64308</InstalledSize>
+        <PackageSize>47072</PackageSize>
+        <PackageHash>9846565c3b082fe04325e669d39c8fc8cc4ac8d0</PackageHash>
+        <PackageURI>megasync/megasync-nautilus-3.6.0.0-5-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>megasync</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -102,6 +105,87 @@ programming language with associated libraries, tools, and documentation</Descri
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>ciano</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>smlnj-docs</Name>
+        <Summary xml:lang="en">Documentation for smlnj</Summary>
+        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
+programming language with associated libraries, tools, and documentation</Description>
+        <PartOf>programming.docs</PartOf>
+        <License>BSD-3-Clause</License>
+        <History>
+            <Update release="1">
+                <Date>2018-02-06</Date>
+                <Version>110.82</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>969210</InstalledSize>
+        <PackageSize>173521</PackageSize>
+        <PackageHash>37a0ae5cac8ee1fbfba0f36d0ef3ca1695f8f79c</PackageHash>
+        <PackageURI>smlnj/smlnj-docs-110.82-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>smlnj</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>megasync</Name>
+        <Summary xml:lang="en">Sync your files to your Mega account.</Summary>
+        <Description xml:lang="en">Easy automated syncing between your computers and your MEGA Cloud Drive.</Description>
+        <PartOf>network.clients</PartOf>
+        <License>MEGA LIMITED CODE REVIEW LICENCE</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="3">libsodium</Dependency>
+            <Dependency releaseFrom="16">qt5-base</Dependency>
+            <Dependency releaseFrom="4">libzen</Dependency>
+            <Dependency releaseFrom="48">glibc</Dependency>
+            <Dependency releaseFrom="5">cryptopp</Dependency>
+            <Dependency releaseFrom="31">openssl</Dependency>
+            <Dependency releaseFrom="10">libmediainfo</Dependency>
+            <Dependency releaseFrom="38">libstdc++</Dependency>
+            <Dependency releaseFrom="38">libgcc</Dependency>
+            <Dependency releaseFrom="19">sqlite3</Dependency>
+            <Dependency releaseFrom="37">curl</Dependency>
+            <Dependency releaseFrom="3">c-ares</Dependency>
+            <Dependency releaseFrom="1">libuv</Dependency>
+            <Dependency releaseFrom="8">qt5-svg</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="5">
+                <Date>2018-02-06</Date>
+                <Version>3.6.0.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>7589675</InstalledSize>
+        <PackageSize>2973966</PackageSize>
+        <PackageHash>9add330f69e856ee8aaa7bcc2f2f0b18abc30186</PackageHash>
+        <PackageURI>megasync/megasync-3.6.0.0-5-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>megasync</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
