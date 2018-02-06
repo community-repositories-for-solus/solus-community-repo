@@ -1,6 +1,6 @@
 name       : megasync
 version    : 3.6.0.0
-release    : 5
+release    : 6
 source     :
     - https://github.com/meganz/MEGAsync/archive/v3.6.0.0_Linux.tar.gz : 4be2ff9e3c0beb7653e269e14802fc0cf82b58cd78b0dbbae469533635cd8ddc
     - https://github.com/meganz/sdk/archive/v3.3.1.tar.gz : da00cbff64eba5b83a98c78347f8def3350fcf2c74ba4d4f03e099e42a1566e6
@@ -25,51 +25,28 @@ builddeps  :
     - cryptopp-devel
 patterns   :
     - nautilus :
-        - /usr/lib/nautilus/
+        - /usr/lib64/nautilus/
         - /usr/share/icons/hicolor/32x32/emblems/
         - /usr/share/icons/hicolor/64x64/emblems/
 setup      : |
-    # setup megasync
-    cd $workdir/src/MEGASync/mega
+    # setup sdk
+    cd $workdir/src/MEGASync/mega/
     tar -xf $sources/v3.3.1.tar.gz --strip 1 -C .
     %autogen --without-freeimage
-    cd $workdir/src
-    %configure
 
-    # setup nautilus extension
-    cd $workdir/src/MEGAShellExtNautilus/
-    %qmake MEGAShellExtNautilus.pro
-build      : |
-    # build megasync
-    cd $workdir/src
-    %qmake MEGA.pro
+    # setup megasync
+    cd $workdir/src/
+    %qmake PREFIX="/usr" SUBDIRS+="MEGAShellExtNautilus" MEGA.pro
     lrelease MEGASync/MEGASync.pro
-    %make
-
-    # build nautilus extension
-    cd $workdir/src/MEGAShellExtNautilus/
+build      : |
+    cd $workdir/src/
     %make
 install    : |
     # install megasync
-    install -Dm 644 $workdir/LICENCE.md $installdir/usr/share/licenses/megasync/LICENCE.md
-    install -Dm 644 $workdir/installer/terms.txt $installdir/usr/share/licenses/megasync/terms.txt
+    cd $workdir/src/MEGASync/
+    %make_install INSTALL_ROOT=$installdir
     install -Dm 755 $workdir/src/MEGASync/megasync $installdir/usr/bin/megasync
-    install -Dm 644 $workdir/src/MEGASync/platform/linux/data/megasync.desktop $installdir/usr/share/applications/megasync.desktop
-    for size in 16x16 32x32 48x48 128x128 256x256
-    do
-    install -Dm 644 $workdir/src/MEGASync/platform/linux/data/icons/hicolor/$size/apps/mega.png $installdir/usr/share/icons/hicolor/$size/apps/mega.png
-    done
 
-    # install nautilus extension
-    install -dm 755 $installdir/usr/lib/nautilus/extensions-3.0/
-    install -m 755 -p $workdir/src/MEGAShellExtNautilus/libMEGAShellExtNautilus.so.1.0.0 $installdir/usr/lib/nautilus/extensions-3.0/
-    cd $workdir/src/MEGAShellExtNautilus/data/emblems
-    for size in 32x32 64x64
-    do
-        install -dm 755 $installdir/usr/share/icons/hicolor/${size}/emblems
-        install -m 644 -p ${size}/mega-{pending,synced,syncing,upload}.{icon,png} $installdir/usr/share/icons/hicolor/${size}/emblems/
-    done
-    cd $installdir/usr/lib/nautilus/extensions-3.0/
-    ln -f -s libMEGAShellExtNautilus.so.1.0.0 libMEGAShellExtNautilus.so.1.0
-    ln -f -s libMEGAShellExtNautilus.so.1.0.0 libMEGAShellExtNautilus.so.1
-    ln -f -s libMEGAShellExtNautilus.so.1.0.0 libMEGAShellExtNautilus.so
+    # install nautilus extension without update_cache
+    cd $workdir/src/MEGAShellExtNautilus/
+    %make install_target install_emblems32 install_emblems64 FORCE INSTALL_ROOT=$installdir

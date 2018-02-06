@@ -46,7 +46,7 @@ programming language with associated libraries, tools, and documentation</Descri
             <Dependency releaseFrom="42">glib2</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="5">
+            <Update release="6">
                 <Date>2018-02-06</Date>
                 <Version>3.6.0.0</Version>
                 <Comment>Packaging update</Comment>
@@ -58,10 +58,10 @@ programming language with associated libraries, tools, and documentation</Descri
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>64308</InstalledSize>
-        <PackageSize>47072</PackageSize>
-        <PackageHash>9846565c3b082fe04325e669d39c8fc8cc4ac8d0</PackageHash>
-        <PackageURI>megasync/megasync-nautilus-3.6.0.0-5-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>72841</InstalledSize>
+        <PackageSize>55532</PackageSize>
+        <PackageHash>6ff9d875181fae0d7c68a691a133dda0c439ecde</PackageHash>
+        <PackageURI>megasync/megasync-nautilus-3.6.0.0-6-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>megasync</Name>
@@ -167,7 +167,7 @@ programming language with associated libraries, tools, and documentation</Descri
             <Dependency releaseFrom="8">qt5-svg</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="5">
+            <Update release="6">
                 <Date>2018-02-06</Date>
                 <Version>3.6.0.0</Version>
                 <Comment>Packaging update</Comment>
@@ -179,10 +179,10 @@ programming language with associated libraries, tools, and documentation</Descri
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>7589675</InstalledSize>
-        <PackageSize>2973966</PackageSize>
-        <PackageHash>9add330f69e856ee8aaa7bcc2f2f0b18abc30186</PackageHash>
-        <PackageURI>megasync/megasync-3.6.0.0-5-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>7579147</InstalledSize>
+        <PackageSize>2965840</PackageSize>
+        <PackageHash>db0fbb18b3020efccbd41655712d4ad400e9136e</PackageHash>
+        <PackageURI>megasync/megasync-3.6.0.0-6-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>megasync</Name>
