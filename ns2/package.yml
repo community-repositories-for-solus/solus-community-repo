@@ -1,0 +1,31 @@
+name       : ns2
+version    : 2.35
+release    : 1
+source     :
+    - http://downloads.sourceforge.net/sourceforge/nsnam/ns-2//ns-src-2.35.tar.gz : 2a32e831bcec7d255042a544577559d15eae67696d0e3d30881cedc1112e2387
+license    : GPL-2.0
+component  : network.util
+summary    : a discrete event simulator targeted at networking research
+description: |
+    Ns is a discrete event simulator targeted at networking research. Ns provides substantial support for simulation of TCP, routing, and multicast protocols over wired and wireless (local and satellite) networks.
+builddeps  :
+    - pkgconfig(tcl)
+    - pkgconfig(tk)
+    - pkgconfig(xt)
+    - pkgconfig(x11)
+    - otcl-devel
+    - tclcl-devel
+setup      : |
+    %patch -p1 < $pkgfiles/ns-2.35-gcc-compile-errors.patch
+    %patch -p1 < $pkgfiles/ns-2.35-getopts.patch
+    %patch -p1 < $pkgfiles/ns-2.35-linkstate-erase.patch
+    %patch -p1 < $pkgfiles/ns-2.35-tcl86.patch
+    %configure --with-tk=/usr --enable-static
+build      : |
+    %make
+install    : |
+    install -d %installroot%/usr/bin
+    install -d %installroot%/usr/share
+    install -d %installroot%/usr/man/man1
+    %make_install
+    mv  %installroot%/usr/man  %installroot%/usr/share

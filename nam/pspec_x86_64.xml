@@ -1,0 +1,34 @@
+<PISI>
+    <Source>
+        <Name>nam-src</Name>
+        <Packager>
+            <Name>Thanos Apostolou</Name>
+            <Email>thanosapostolou@outlook.com</Email>
+        </Packager>
+        <License>GPL-2.0</License>
+        <PartOf>network.util</PartOf>
+        <Summary xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Summary>
+        <Description xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>nam-src</Name>
+        <Summary xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Summary>
+        <Description xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces
+</Description>
+        <PartOf>network.util</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-03-16</Date>
+            <Version>1.15</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Thanos Apostolou</Name>
+            <Email>thanosapostolou@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>

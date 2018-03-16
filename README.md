@@ -20,8 +20,9 @@ If you don't want to use the repository, then you can clone the github repo and 
 # Maintainers
   - ThanosApostolou
     1. ciano
-    2. smlnj
-    3. megasync
+    2. megasync
+    3. ns2, nam, xgraph (with otcl and tclcl dependencies)
+    4. smlnj
 
 # Build Instructions:
 1. Clone this repo by running `git clone https://github.com/community-repositories-for-solus/solus-community-repo.git`

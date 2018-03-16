@@ -1,0 +1,18 @@
+name       : xgraph
+version    : 4.30
+release    : 1
+source     :
+    - http://www.xgraph.org/linux/xgraph_4.30_linux64.tar.gz : 4c7dd6468fb310899d4adc7b9f4dda4c329ac6f9a3bc7051fde307fa8878567b
+license    : GPL-2.0
+component  : network.util
+summary    : a general purpose x-y data plotter
+description: |
+    XGRAPH is a general purpose x-y data plotter with interactive buttons for panning, zooming, printing, and selecting display options.
+install    : |
+    install -Dm755 ./bin/xgraph "%installroot%/usr/bin/xgraph"
+    install -Dm644 Readme.txt "%installroot%/usr/share/xgraph/Readme.txt"
+    install -Dm644 testxy.dat "%installroot%/usr/share/xgraph/testxy.dat"
+    install -Dm644 ./data/oofficedata.scz "%installroot%/usr/share/xgraph/data/oofficedata.scz"
+    install -Dm644 ./data/pptxdata.scz "%installroot%/usr/share/xgraph/data/pptxdata.scz"
+    install -Dm644 ./data/sxidata.scz "%installroot%/usr/share/xgraph/data/sxidata.scz"
+    install -Dm644 ./data/pptx/thumbnail.jpeg "%installroot%/usr/share/xgraph/data/pptx/thumbnail.jpeg"

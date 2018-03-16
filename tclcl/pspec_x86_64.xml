@@ -1,0 +1,48 @@
+<PISI>
+    <Source>
+        <Name>tclcl</Name>
+        <Packager>
+            <Name>Thanos Apostolou</Name>
+            <Email>thanosapostolou@outlook.com</Email>
+        </Packager>
+        <License>MIT</License>
+        <PartOf>programming.devel</PartOf>
+        <Summary xml:lang="en">a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam</Summary>
+        <Description xml:lang="en">TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>tclcl</Name>
+        <Summary xml:lang="en">a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam</Summary>
+        <Description xml:lang="en">TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>tclcl-devel</Name>
+        <Summary xml:lang="en">Development files for tclcl</Summary>
+        <Description xml:lang="en">TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">tclcl</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib/lib*.a</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2018-03-16</Date>
+            <Version>1.2</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Thanos Apostolou</Name>
+            <Email>thanosapostolou@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
