@@ -23,6 +23,7 @@ If you don't want to use the repository, then you can clone the github repo and 
     2. megasync
     3. ns2, nam, xgraph (with otcl and tclcl dependencies)
     4. smlnj
+    5. wmctrl
 
 # Build Instructions:
 1. Clone this repo by running `git clone https://github.com/community-repositories-for-solus/solus-community-repo.git`
