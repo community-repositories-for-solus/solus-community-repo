@@ -1,6 +1,6 @@
-name       : nam-src
+name       : nam
 version    : 1.15
-release    : 1
+release    : 2
 source     :
     - http://downloads.sourceforge.net/sourceforge/nsnam/nam-1/1.15/nam-src-1.15.tar.gz : 12ed547b3a5f8903890889d40cfea4d9bd66bb9ba6be99a0c753a9763cad8882
 license    : GPL-2.0
