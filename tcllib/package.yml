@@ -1,0 +1,18 @@
+name       : tcllib
+version    : 1.19
+release    : 1
+source     :
+    - https://core.tcl.tk/tcllib/uv/tcllib-1.19.tar.gz : 01fe87cf1855b96866cf5394b6a786fd40b314022714b34110aeb6af545f6a9c
+license    : GPL-2.0
+component  : programming.library
+summary    : a Tcl-only library of standard routines for Tcl (no compiling required).
+description: |
+    tcllib is a Tcl-only library of standard routines for Tcl (no compiling required).
+builddeps  :
+    - pkgconfig(tcl)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
