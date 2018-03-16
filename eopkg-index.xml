@@ -228,6 +228,42 @@
         </Source>
     </Package>
     <Package>
+        <Name>remind</Name>
+        <Summary xml:lang="en">A sophisticated calendar and alarm program</Summary>
+        <Description xml:lang="en">A sophisticated calendar and alarm program</Description>
+        <PartOf>office</PartOf>
+        <License>GPL-2.</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency>tcllib</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>03.01.15</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>507876</InstalledSize>
+        <PackageSize>171965</PackageSize>
+        <PackageHash>6b9cf191b10f7ffc22f1eb816e4f50932c9c39f8</PackageHash>
+        <PackageURI>remind/remind-03.01.15-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>remind</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>megasync-nautilus</Name>
         <Summary xml:lang="en">Sync your files to your Mega account.</Summary>
         <Description xml:lang="en">Easy automated syncing between your computers and your MEGA Cloud Drive.</Description>
@@ -329,6 +365,38 @@ programming language with associated libraries, tools, and documentation</Descri
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>smlnj</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>tcllib</Name>
+        <Summary xml:lang="en">a Tcl-only library of standard routines for Tcl (no compiling required).</Summary>
+        <Description xml:lang="en">tcllib is a Tcl-only library of standard routines for Tcl (no compiling required).</Description>
+        <PartOf>programming.library</PartOf>
+        <License>GPL-2.0</License>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>1.19</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>15658634</InstalledSize>
+        <PackageSize>2476006</PackageSize>
+        <PackageHash>0730eef5014d693b3136913791baeb992213c94b</PackageHash>
+        <PackageURI>tcllib/tcllib-1.19-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>tcllib</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
