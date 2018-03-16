@@ -1,0 +1,18 @@
+name       : wmctrl
+version    : 1.07
+release    : 1
+source     :
+    - http://tripie.sweb.cz/utils/wmctrl/dist/wmctrl-1.07.tar.gz : d78a1efdb62f18674298ad039c5cbdb1edb6e8e149bb3a8e3a01a4750aa3cca9
+license    : GPL-2.0
+component  : system.utils
+summary    : Control your EWMH compliant window manager from command line
+description: |
+    Control your EWMH compliant window manager from command line
+builddeps  :
+    - pkgconfig(xmu)
+setup      : |
+    %configure
+build      : |
+    %make
+install    : |
+    %make_install
