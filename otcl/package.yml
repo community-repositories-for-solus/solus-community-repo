@@ -1,0 +1,26 @@
+name       : otcl
+version    : 1.14
+release    : 1
+source     :
+    - http://downloads.sourceforge.net/otcl-tclcl/otcl-src-1.14.tar.gz : c644aed47ccd7e082ad47388dc8a2412a0eceacbe81d8574e560a797b782b969
+license    : MIT
+component  : programming.devel
+summary    : An extension to Tcl/Tk for object-oriented programming
+description: |
+    OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming
+builddeps  :
+    - pkgconfig(tcl)
+    - pkgconfig(tk)
+    - pkgconfig(xt)
+    - pkgconfig(x11)
+setup      : |
+    %patch -p1 < $pkgfiles/otcl-1.14-tcl86-compat.patch
+    %configure --enable-static --with-tk=/usr
+build      : |
+    %make -j1
+install    : |
+    %make_install INST_OTCLSH=$installdir/usr/bin \
+                  INST_OWISH=$installdir/usr/bin \
+                  INST_OLIB=$installdir/usr/lib64 \
+                  INST_OLIBSH=$installdir/usr/lib64 \
+                  INST_OINC=$installdir/usr/include

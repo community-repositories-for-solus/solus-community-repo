@@ -1,18 +1,22 @@
 <PISI>
     <Package>
-        <Name>smlnj</Name>
-        <Summary xml:lang="en">Standard ML of New Jersey</Summary>
-        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
-programming language with associated libraries, tools, and documentation</Description>
-        <PartOf>programming.tools</PartOf>
-        <License>BSD-3-Clause</License>
+        <Name>ciano</Name>
+        <Summary xml:lang="en">Multimedia converter</Summary>
+        <Description xml:lang="en">A simple multimedia file converter.</Description>
+        <PartOf>multimedia.audio</PartOf>
+        <License>GPL-3.0</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="48">glibc-32bit</Dependency>
+            <Dependency releaseFrom="68">libgtk-3</Dependency>
+            <Dependency releaseFrom="9">libgee</Dependency>
+            <Dependency releaseFrom="7">granite</Dependency>
+            <Dependency releaseFrom="48">glibc</Dependency>
+            <Dependency releaseFrom="42">glib2</Dependency>
+            <Dependency releaseFrom="18">pango</Dependency>
         </RuntimeDependencies>
         <History>
             <Update release="1">
                 <Date>2018-02-06</Date>
-                <Version>110.82</Version>
+                <Version>0.1.9</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -22,13 +26,50 @@ programming language with associated libraries, tools, and documentation</Descri
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>36167088</InstalledSize>
-        <PackageSize>10387058</PackageSize>
-        <PackageHash>b0ed837f2e5303b0dee5f30655b84700ca77ec76</PackageHash>
-        <PackageURI>smlnj/smlnj-110.82-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>358640</InstalledSize>
+        <PackageSize>108493</PackageSize>
+        <PackageHash>d7ed9a53cfbe19d6c7cddb0af616ac9d7de75b33</PackageHash>
+        <PackageURI>ciano/ciano-0.1.9-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>smlnj</Name>
+            <Name>ciano</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>otcl</Name>
+        <Summary xml:lang="en">An extension to Tcl/Tk for object-oriented programming</Summary>
+        <Description xml:lang="en">OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>MIT</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="7">tcl</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency releaseFrom="7">tk</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>1.14</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>86664</InstalledSize>
+        <PackageSize>20828</PackageSize>
+        <PackageHash>cd3bf83d641135ad8662261c3a4fc5ac3f6e368f</PackageHash>
+        <PackageURI>otcl/otcl-1.14-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>otcl</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -72,23 +113,19 @@ programming language with associated libraries, tools, and documentation</Descri
         </Source>
     </Package>
     <Package>
-        <Name>ciano</Name>
-        <Summary xml:lang="en">Multimedia converter</Summary>
-        <Description xml:lang="en">A simple multimedia file converter.</Description>
-        <PartOf>multimedia.audio</PartOf>
-        <License>GPL-3.0</License>
+        <Name>otcl-devel</Name>
+        <Summary xml:lang="en">Development files for otcl</Summary>
+        <Description xml:lang="en">OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>MIT</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="68">libgtk-3</Dependency>
-            <Dependency releaseFrom="9">libgee</Dependency>
-            <Dependency releaseFrom="7">granite</Dependency>
-            <Dependency releaseFrom="48">glibc</Dependency>
-            <Dependency releaseFrom="42">glib2</Dependency>
-            <Dependency releaseFrom="18">pango</Dependency>
+            <Dependency release="1">otcl</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
         </RuntimeDependencies>
         <History>
             <Update release="1">
-                <Date>2018-02-06</Date>
-                <Version>0.1.9</Version>
+                <Date>2018-03-16</Date>
+                <Version>1.14</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -98,13 +135,49 @@ programming language with associated libraries, tools, and documentation</Descri
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>358640</InstalledSize>
-        <PackageSize>108493</PackageSize>
-        <PackageHash>d7ed9a53cfbe19d6c7cddb0af616ac9d7de75b33</PackageHash>
-        <PackageURI>ciano/ciano-0.1.9-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>111254</InstalledSize>
+        <PackageSize>25003</PackageSize>
+        <PackageHash>a0a07110b2e0f97af73236afecc7215fba191fe5</PackageHash>
+        <PackageURI>otcl/otcl-devel-1.14-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>ciano</Name>
+            <Name>otcl</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>smlnj</Name>
+        <Summary xml:lang="en">Standard ML of New Jersey</Summary>
+        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
+programming language with associated libraries, tools, and documentation</Description>
+        <PartOf>programming.tools</PartOf>
+        <License>BSD-3-Clause</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="48">glibc-32bit</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-02-06</Date>
+                <Version>110.82</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>36167088</InstalledSize>
+        <PackageSize>10387058</PackageSize>
+        <PackageHash>b0ed837f2e5303b0dee5f30655b84700ca77ec76</PackageHash>
+        <PackageURI>smlnj/smlnj-110.82-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>smlnj</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
