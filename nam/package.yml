@@ -1,0 +1,27 @@
+name       : nam-src
+version    : 1.15
+release    : 1
+source     :
+    - http://downloads.sourceforge.net/sourceforge/nsnam/nam-1/1.15/nam-src-1.15.tar.gz : 12ed547b3a5f8903890889d40cfea4d9bd66bb9ba6be99a0c753a9763cad8882
+license    : GPL-2.0
+component  : network.util
+summary    : Tcl/TK based animation tool for viewing network simulation traces and real world packet traces
+description: |
+    Tcl/TK based animation tool for viewing network simulation traces and real world packet traces
+builddeps  :
+    - pkgconfig(tcl)
+    - pkgconfig(tk)
+    - pkgconfig(xmu)
+    - pkgconfig(xt)
+    - pkgconfig(x11)
+    - otcl-devel
+    - tclcl-devel
+setup      : |
+    %patch -p1 < $pkgfiles/nam-1.15-gcc61.patch
+    %patch -p1 < $pkgfiles/nam-1.15-tcl86.patch
+    %configure --with-tk=/usr
+build      : |
+    %make
+install    : |
+    install -d %installroot%/usr/bin
+    %make_install

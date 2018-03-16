@@ -1,5 +1,76 @@
 <PISI>
     <Package>
+        <Name>xgraph</Name>
+        <Summary xml:lang="en">a general purpose x-y data plotter</Summary>
+        <Description xml:lang="en">XGRAPH is a general purpose x-y data plotter with interactive buttons for panning, zooming, printing, and selecting display options.</Description>
+        <PartOf>network.util</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency releaseFrom="43">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>4.3</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>662330</InstalledSize>
+        <PackageSize>170644</PackageSize>
+        <PackageHash>b0b73267419087b00acf370f40d58569a7db5d52</PackageHash>
+        <PackageURI>xgraph/xgraph-4.3-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>xgraph</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>tclcl-devel</Name>
+        <Summary xml:lang="en">Development files for tclcl</Summary>
+        <Description xml:lang="en">TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>MIT</License>
+        <RuntimeDependencies>
+            <Dependency release="1">tclcl</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>1.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>389560</InstalledSize>
+        <PackageSize>71682</PackageSize>
+        <PackageHash>39cfae75b4f60127fa7356a3bb1f0f8e3e0edd15</PackageHash>
+        <PackageURI>tclcl/tclcl-devel-1.2-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>tclcl</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>ciano</Name>
         <Summary xml:lang="en">Multimedia converter</Summary>
         <Description xml:lang="en">A simple multimedia file converter.</Description>
@@ -178,6 +249,119 @@ programming language with associated libraries, tools, and documentation</Descri
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>smlnj</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>nam-src</Name>
+        <Summary xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Summary>
+        <Description xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Description>
+        <PartOf>network.util</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="18">zlib</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency releaseFrom="18">libx11</Dependency>
+            <Dependency releaseFrom="39">libstdc++</Dependency>
+            <Dependency releaseFrom="7">tcl</Dependency>
+            <Dependency releaseFrom="1">otcl-devel</Dependency>
+            <Dependency releaseFrom="39">libgcc</Dependency>
+            <Dependency releaseFrom="8">tk</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>1.15</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>710056</InstalledSize>
+        <PackageSize>191608</PackageSize>
+        <PackageHash>74b3b63eee83d1aeab146d876d2915f764c9261a</PackageHash>
+        <PackageURI>nam/nam-src-1.15-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>nam-src</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>tclcl</Name>
+        <Summary xml:lang="en">a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam</Summary>
+        <Description xml:lang="en">TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>MIT</License>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>1.2</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>750704</InstalledSize>
+        <PackageSize>279879</PackageSize>
+        <PackageHash>a0186c347a4b5e461c9acff5c031e53f97385564</PackageHash>
+        <PackageURI>tclcl/tclcl-1.2-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>tclcl</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>ns2</Name>
+        <Summary xml:lang="en">a discrete event simulator targeted at networking research</Summary>
+        <Description xml:lang="en">Ns is a discrete event simulator targeted at networking research. Ns provides substantial support for simulation of TCP, routing, and multicast protocols over wired and wireless (local and satellite) networks.</Description>
+        <PartOf>network.util</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="39">libstdc++</Dependency>
+            <Dependency releaseFrom="7">tcl</Dependency>
+            <Dependency releaseFrom="1">otcl-devel</Dependency>
+            <Dependency releaseFrom="39">libgcc</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>2.35</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>4477140</InstalledSize>
+        <PackageSize>1423305</PackageSize>
+        <PackageHash>70444aa5b00ae9db254858fb6a6f2f7faba6a957</PackageHash>
+        <PackageURI>ns2/ns2-2.35-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>ns2</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
