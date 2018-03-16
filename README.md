@@ -9,7 +9,7 @@ Packages are built against Solus Unstable and pushed into master branch. Then th
 # Enable Repository
 Run:
 ```
-sudo eopkg ar SolusCommunity http://raw.github.com/SolusCommunity/solus-community-repo/stable/eopkg-index.xml.xz
+sudo eopkg ar SolusCommunity http://raw.github.com/community-repositories-for-solus/solus-community-repo/stable/eopkg-index.xml.xz
 sudo eopkg ur -f
 ```
 
@@ -19,10 +19,12 @@ If you don't want to use the repository, then you can clone the github repo and 
 
 # Maintainers
   - ThanosApostolou
-    1. smlnj
+    1. ciano
+    2. smlnj
+    3. megasync
 
 # Build Instructions:
-1. Clone this repo by running `git clone https://github.com/SolusCommunity/solus-community-repo.git`
+1. Clone this repo by running `git clone https://github.com/community-repositories-for-solus/solus-community-repo.git`
 2. Clone Solus common repo next to it by running `git clone https://dev.solus-project.com/source/common.git`
 4. Run `make` to each folder in order to build.
 5. Run `eopkg index --skip-signing` in **solus-community-repo** folder and push changes.

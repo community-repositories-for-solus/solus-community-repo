@@ -1,77 +1,5 @@
 <PISI>
     <Package>
-        <Name>smlnj</Name>
-        <Summary xml:lang="en">Standard ML of New Jersey</Summary>
-        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
-programming language with associated libraries, tools, and documentation</Description>
-        <PartOf>programming.tools</PartOf>
-        <License>BSD-3-Clause</License>
-        <RuntimeDependencies>
-            <Dependency releaseFrom="48">glibc-32bit</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2018-02-06</Date>
-                <Version>110.82</Version>
-                <Comment>Packaging update</Comment>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>36167088</InstalledSize>
-        <PackageSize>10387058</PackageSize>
-        <PackageHash>b0ed837f2e5303b0dee5f30655b84700ca77ec76</PackageHash>
-        <PackageURI>smlnj/smlnj-110.82-1-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>smlnj</Name>
-            <Packager>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>megasync-nautilus</Name>
-        <Summary xml:lang="en">Sync your files to your Mega account.</Summary>
-        <Description xml:lang="en">Easy automated syncing between your computers and your MEGA Cloud Drive.</Description>
-        <License>MEGA LIMITED CODE REVIEW LICENCE</License>
-        <RuntimeDependencies>
-            <Dependency releaseFrom="44">nautilus-extension</Dependency>
-            <Dependency releaseFrom="48">glibc</Dependency>
-            <Dependency releaseFrom="42">glib2</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="5">
-                <Date>2018-02-06</Date>
-                <Version>3.6.0.0</Version>
-                <Comment>Packaging update</Comment>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>64308</InstalledSize>
-        <PackageSize>47072</PackageSize>
-        <PackageHash>9846565c3b082fe04325e669d39c8fc8cc4ac8d0</PackageHash>
-        <PackageURI>megasync/megasync-nautilus-3.6.0.0-5-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>megasync</Name>
-            <Packager>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>ciano</Name>
         <Summary xml:lang="en">Multimedia converter</Summary>
         <Description xml:lang="en">A simple multimedia file converter.</Description>
@@ -105,6 +33,151 @@ programming language with associated libraries, tools, and documentation</Descri
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>ciano</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>otcl</Name>
+        <Summary xml:lang="en">An extension to Tcl/Tk for object-oriented programming</Summary>
+        <Description xml:lang="en">OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>MIT</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="7">tcl</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency releaseFrom="7">tk</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>1.14</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>86664</InstalledSize>
+        <PackageSize>20828</PackageSize>
+        <PackageHash>cd3bf83d641135ad8662261c3a4fc5ac3f6e368f</PackageHash>
+        <PackageURI>otcl/otcl-1.14-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>otcl</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>megasync-nautilus</Name>
+        <Summary xml:lang="en">Sync your files to your Mega account.</Summary>
+        <Description xml:lang="en">Easy automated syncing between your computers and your MEGA Cloud Drive.</Description>
+        <License>MEGA LIMITED CODE REVIEW LICENCE</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="44">nautilus-extension</Dependency>
+            <Dependency releaseFrom="48">glibc</Dependency>
+            <Dependency releaseFrom="42">glib2</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="6">
+                <Date>2018-02-06</Date>
+                <Version>3.6.0.0</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>72841</InstalledSize>
+        <PackageSize>55532</PackageSize>
+        <PackageHash>6ff9d875181fae0d7c68a691a133dda0c439ecde</PackageHash>
+        <PackageURI>megasync/megasync-nautilus-3.6.0.0-6-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>megasync</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>otcl-devel</Name>
+        <Summary xml:lang="en">Development files for otcl</Summary>
+        <Description xml:lang="en">OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming</Description>
+        <PartOf>programming.devel</PartOf>
+        <License>MIT</License>
+        <RuntimeDependencies>
+            <Dependency release="1">otcl</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-03-16</Date>
+                <Version>1.14</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>111254</InstalledSize>
+        <PackageSize>25003</PackageSize>
+        <PackageHash>a0a07110b2e0f97af73236afecc7215fba191fe5</PackageHash>
+        <PackageURI>otcl/otcl-devel-1.14-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>otcl</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
+        <Name>smlnj</Name>
+        <Summary xml:lang="en">Standard ML of New Jersey</Summary>
+        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
+programming language with associated libraries, tools, and documentation</Description>
+        <PartOf>programming.tools</PartOf>
+        <License>BSD-3-Clause</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="48">glibc-32bit</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="1">
+                <Date>2018-02-06</Date>
+                <Version>110.82</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>36167088</InstalledSize>
+        <PackageSize>10387058</PackageSize>
+        <PackageHash>b0ed837f2e5303b0dee5f30655b84700ca77ec76</PackageHash>
+        <PackageURI>smlnj/smlnj-110.82-1-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>smlnj</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -167,7 +240,7 @@ programming language with associated libraries, tools, and documentation</Descri
             <Dependency releaseFrom="8">qt5-svg</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="5">
+            <Update release="6">
                 <Date>2018-02-06</Date>
                 <Version>3.6.0.0</Version>
                 <Comment>Packaging update</Comment>
@@ -179,10 +252,10 @@ programming language with associated libraries, tools, and documentation</Descri
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>7589675</InstalledSize>
-        <PackageSize>2973966</PackageSize>
-        <PackageHash>9add330f69e856ee8aaa7bcc2f2f0b18abc30186</PackageHash>
-        <PackageURI>megasync/megasync-3.6.0.0-5-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>7579147</InstalledSize>
+        <PackageSize>2965840</PackageSize>
+        <PackageHash>db0fbb18b3020efccbd41655712d4ad400e9136e</PackageHash>
+        <PackageURI>megasync/megasync-3.6.0.0-6-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>megasync</Name>

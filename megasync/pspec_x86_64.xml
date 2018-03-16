@@ -21,13 +21,22 @@
         <Files>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="data">/usr/share/applications/megasync.desktop</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
             <Path fileType="data">/usr/share/icons/hicolor/128x128/apps/mega.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/16x16/apps/mega.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/256x256/apps/mega.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/32x32/apps/mega.png</Path>
             <Path fileType="data">/usr/share/icons/hicolor/48x48/apps/mega.png</Path>
-            <Path fileType="data">/usr/share/licenses/megasync/LICENCE.md</Path>
-            <Path fileType="data">/usr/share/licenses/megasync/terms.txt</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/megalogging.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/megapaused.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/megasynching.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/megauptodate.svg</Path>
+            <Path fileType="data">/usr/share/icons/hicolor/scalable/status/megawarning.svg</Path>
+            <Path fileType="data">/usr/share/icons/ubuntu-mono-dark/status/24/megalogging.svg</Path>
+            <Path fileType="data">/usr/share/icons/ubuntu-mono-dark/status/24/megapaused.svg</Path>
+            <Path fileType="data">/usr/share/icons/ubuntu-mono-dark/status/24/megasynching.svg</Path>
+            <Path fileType="data">/usr/share/icons/ubuntu-mono-dark/status/24/megauptodate.svg</Path>
+            <Path fileType="data">/usr/share/icons/ubuntu-mono-dark/status/24/megawarning.svg</Path>
         </Files>
     </Package>
     <Package>
@@ -36,13 +45,13 @@
         <Description xml:lang="en">Easy automated syncing between your computers and your MEGA Cloud Drive.
 </Description>
         <Files>
-            <Path fileType="library">/usr/lib/nautilus/</Path>
+            <Path fileType="library">/usr/lib64/nautilus/</Path>
             <Path fileType="data">/usr/share/icons/hicolor/32x32/emblems/</Path>
             <Path fileType="data">/usr/share/icons/hicolor/64x64/emblems/</Path>
         </Files>
     </Package>
     <History>
-        <Update release="5">
+        <Update release="6">
             <Date>2018-02-06</Date>
             <Version>3.6.0.0</Version>
             <Comment>Packaging update</Comment>
