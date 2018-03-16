@@ -111,6 +111,48 @@
         </Source>
     </Package>
     <Package>
+        <Name>nam</Name>
+        <Summary xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Summary>
+        <Description xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Description>
+        <PartOf>network.util</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="18">zlib</Dependency>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency releaseFrom="18">libx11</Dependency>
+            <Dependency releaseFrom="39">libstdc++</Dependency>
+            <Dependency releaseFrom="7">tcl</Dependency>
+            <Dependency releaseFrom="1">otcl-devel</Dependency>
+            <Dependency releaseFrom="39">libgcc</Dependency>
+            <Dependency releaseFrom="8">tk</Dependency>
+        </RuntimeDependencies>
+        <History>
+            <Update release="2">
+                <Date>2018-03-16</Date>
+                <Version>1.15</Version>
+                <Comment>Packaging update</Comment>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Update>
+        </History>
+        <BuildHost>solus</BuildHost>
+        <Distribution>Solus</Distribution>
+        <DistributionRelease>1</DistributionRelease>
+        <Architecture>x86_64</Architecture>
+        <InstalledSize>710056</InstalledSize>
+        <PackageSize>191601</PackageSize>
+        <PackageHash>45f231e8c23bf1a2ab844484b74d95424211099e</PackageHash>
+        <PackageURI>nam/nam-1.15-2-1-x86_64.eopkg</PackageURI>
+        <PackageFormat>1.2</PackageFormat>
+        <Source>
+            <Name>nam</Name>
+            <Packager>
+                <Name>Thanos Apostolou</Name>
+                <Email>thanosapostolou@outlook.com</Email>
+            </Packager>
+        </Source>
+    </Package>
+    <Package>
         <Name>otcl</Name>
         <Summary xml:lang="en">An extension to Tcl/Tk for object-oriented programming</Summary>
         <Description xml:lang="en">OTcl, short for MIT Object Tcl, is an extension to Tcl/Tk for object-oriented programming</Description>
@@ -249,48 +291,6 @@ programming language with associated libraries, tools, and documentation</Descri
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>smlnj</Name>
-            <Packager>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
-        <Name>nam-src</Name>
-        <Summary xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Summary>
-        <Description xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Description>
-        <PartOf>network.util</PartOf>
-        <License>GPL-2.0</License>
-        <RuntimeDependencies>
-            <Dependency releaseFrom="18">zlib</Dependency>
-            <Dependency releaseFrom="49">glibc</Dependency>
-            <Dependency releaseFrom="18">libx11</Dependency>
-            <Dependency releaseFrom="39">libstdc++</Dependency>
-            <Dependency releaseFrom="7">tcl</Dependency>
-            <Dependency releaseFrom="1">otcl-devel</Dependency>
-            <Dependency releaseFrom="39">libgcc</Dependency>
-            <Dependency releaseFrom="8">tk</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2018-03-16</Date>
-                <Version>1.15</Version>
-                <Comment>Packaging update</Comment>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>710056</InstalledSize>
-        <PackageSize>191608</PackageSize>
-        <PackageHash>74b3b63eee83d1aeab146d876d2915f764c9261a</PackageHash>
-        <PackageURI>nam/nam-src-1.15-1-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>nam-src</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>

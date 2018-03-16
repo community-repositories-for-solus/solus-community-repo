@@ -1,6 +1,6 @@
 <PISI>
     <Source>
-        <Name>nam-src</Name>
+        <Name>nam</Name>
         <Packager>
             <Name>Thanos Apostolou</Name>
             <Email>thanosapostolou@outlook.com</Email>
@@ -13,7 +13,7 @@
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
-        <Name>nam-src</Name>
+        <Name>nam</Name>
         <Summary xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces</Summary>
         <Description xml:lang="en">Tcl/TK based animation tool for viewing network simulation traces and real world packet traces
 </Description>
@@ -23,7 +23,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
+        <Update release="2">
             <Date>2018-03-16</Date>
             <Version>1.15</Version>
             <Comment>Packaging update</Comment>
