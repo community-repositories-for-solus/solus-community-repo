@@ -80,11 +80,11 @@
         <PartOf>programming.devel</PartOf>
         <License>MIT</License>
         <RuntimeDependencies>
-            <Dependency release="1">tclcl</Dependency>
+            <Dependency release="2">tclcl</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="1">
-                <Date>2018-03-16</Date>
+            <Update release="2">
+                <Date>2018-03-25</Date>
                 <Version>1.2</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -96,9 +96,9 @@
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>389560</InstalledSize>
-        <PackageSize>71682</PackageSize>
-        <PackageHash>39cfae75b4f60127fa7356a3bb1f0f8e3e0edd15</PackageHash>
-        <PackageURI>tclcl/tclcl-devel-1.2-1-1-x86_64.eopkg</PackageURI>
+        <PackageSize>71690</PackageSize>
+        <PackageHash>095147d23f39a98b2ac570140009a1f0b5b1421e</PackageHash>
+        <PackageURI>tclcl/tclcl-devel-1.2-2-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>tclcl</Name>
@@ -160,13 +160,13 @@
             <Dependency releaseFrom="18">libx11</Dependency>
             <Dependency releaseFrom="39">libstdc++</Dependency>
             <Dependency releaseFrom="7">tcl</Dependency>
-            <Dependency releaseFrom="1">otcl-devel</Dependency>
+            <Dependency releaseFrom="2">otcl-devel</Dependency>
             <Dependency releaseFrom="39">libgcc</Dependency>
             <Dependency releaseFrom="8">tk</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="2">
-                <Date>2018-03-16</Date>
+            <Update release="3">
+                <Date>2018-03-25</Date>
                 <Version>1.15</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -178,9 +178,9 @@
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>710056</InstalledSize>
-        <PackageSize>191601</PackageSize>
-        <PackageHash>45f231e8c23bf1a2ab844484b74d95424211099e</PackageHash>
-        <PackageURI>nam/nam-1.15-2-1-x86_64.eopkg</PackageURI>
+        <PackageSize>191596</PackageSize>
+        <PackageHash>7370864576ffc1a1adb69ee5c8e4bbf926ead6b4</PackageHash>
+        <PackageURI>nam/nam-1.15-3-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>nam</Name>
@@ -199,11 +199,11 @@
         <RuntimeDependencies>
             <Dependency releaseFrom="7">tcl</Dependency>
             <Dependency releaseFrom="49">glibc</Dependency>
-            <Dependency releaseFrom="7">tk</Dependency>
+            <Dependency releaseFrom="8">tk</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="1">
-                <Date>2018-03-16</Date>
+            <Update release="2">
+                <Date>2018-03-25</Date>
                 <Version>1.14</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -215,9 +215,9 @@
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>86664</InstalledSize>
-        <PackageSize>20828</PackageSize>
-        <PackageHash>cd3bf83d641135ad8662261c3a4fc5ac3f6e368f</PackageHash>
-        <PackageURI>otcl/otcl-1.14-1-1-x86_64.eopkg</PackageURI>
+        <PackageSize>20822</PackageSize>
+        <PackageHash>aff2d6e0b862e2f9555d7bd6120f2971154ce8ad</PackageHash>
+        <PackageURI>otcl/otcl-1.14-2-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>otcl</Name>
@@ -306,12 +306,12 @@
         <PartOf>programming.devel</PartOf>
         <License>MIT</License>
         <RuntimeDependencies>
-            <Dependency release="1">otcl</Dependency>
+            <Dependency release="2">otcl</Dependency>
             <Dependency releaseFrom="49">glibc</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="1">
-                <Date>2018-03-16</Date>
+            <Update release="2">
+                <Date>2018-03-25</Date>
                 <Version>1.14</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -323,9 +323,9 @@
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>111254</InstalledSize>
-        <PackageSize>25003</PackageSize>
-        <PackageHash>a0a07110b2e0f97af73236afecc7215fba191fe5</PackageHash>
-        <PackageURI>otcl/otcl-devel-1.14-1-1-x86_64.eopkg</PackageURI>
+        <PackageSize>25004</PackageSize>
+        <PackageHash>bfbe6f660c671e32e2b366e72b0a56cd01c44549</PackageHash>
+        <PackageURI>otcl/otcl-devel-1.14-2-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>otcl</Name>
@@ -410,8 +410,8 @@ programming language with associated libraries, tools, and documentation</Descri
         <PartOf>programming.devel</PartOf>
         <License>MIT</License>
         <History>
-            <Update release="1">
-                <Date>2018-03-16</Date>
+            <Update release="2">
+                <Date>2018-03-25</Date>
                 <Version>1.2</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -423,9 +423,9 @@ programming language with associated libraries, tools, and documentation</Descri
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>750704</InstalledSize>
-        <PackageSize>279879</PackageSize>
-        <PackageHash>a0186c347a4b5e461c9acff5c031e53f97385564</PackageHash>
-        <PackageURI>tclcl/tclcl-1.2-1-1-x86_64.eopkg</PackageURI>
+        <PackageSize>279883</PackageSize>
+        <PackageHash>64027f8adfb0d4c0cd8e8dd189f255f3a46ac7eb</PackageHash>
+        <PackageURI>tclcl/tclcl-1.2-2-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>tclcl</Name>
@@ -444,13 +444,13 @@ programming language with associated libraries, tools, and documentation</Descri
         <RuntimeDependencies>
             <Dependency releaseFrom="39">libstdc++</Dependency>
             <Dependency releaseFrom="7">tcl</Dependency>
-            <Dependency releaseFrom="1">otcl-devel</Dependency>
+            <Dependency releaseFrom="2">otcl-devel</Dependency>
             <Dependency releaseFrom="39">libgcc</Dependency>
             <Dependency releaseFrom="49">glibc</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="1">
-                <Date>2018-03-16</Date>
+            <Update release="2">
+                <Date>2018-03-25</Date>
                 <Version>2.35</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
@@ -462,9 +462,9 @@ programming language with associated libraries, tools, and documentation</Descri
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
         <InstalledSize>4477140</InstalledSize>
-        <PackageSize>1423305</PackageSize>
-        <PackageHash>70444aa5b00ae9db254858fb6a6f2f7faba6a957</PackageHash>
-        <PackageURI>ns2/ns2-2.35-1-1-x86_64.eopkg</PackageURI>
+        <PackageSize>1423304</PackageSize>
+        <PackageHash>5968974877ceb82cb183592986d2cf9398a6d497</PackageHash>
+        <PackageURI>ns2/ns2-2.35-2-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>ns2</Name>

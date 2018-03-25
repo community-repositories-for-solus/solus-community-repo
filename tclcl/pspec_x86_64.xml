@@ -29,7 +29,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="1">tclcl</Dependency>
+            <Dependency release="2">tclcl</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -37,8 +37,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-03-16</Date>
+        <Update release="2">
+            <Date>2018-03-25</Date>
             <Version>1.2</Version>
             <Comment>Packaging update</Comment>
             <Name>Thanos Apostolou</Name>
