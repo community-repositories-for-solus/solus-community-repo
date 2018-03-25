@@ -1,6 +1,6 @@
 name       : ns2
 version    : 2.35
-release    : 1
+release    : 2
 source     :
     - http://downloads.sourceforge.net/sourceforge/nsnam/ns-2//ns-src-2.35.tar.gz : 2a32e831bcec7d255042a544577559d15eae67696d0e3d30881cedc1112e2387
 license    : GPL-2.0
