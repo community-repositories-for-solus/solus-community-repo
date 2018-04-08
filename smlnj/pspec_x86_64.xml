@@ -2,7 +2,7 @@
     <Source>
         <Name>smlnj</Name>
         <Packager>
-            <Name>Thanos Apostolou</Name>
+            <Name>ThanosApostolou</Name>
             <Email>thanosapostolou@outlook.com</Email>
         </Packager>
         <License>BSD-3-Clause</License>
@@ -21,28 +21,16 @@ programming language with associated libraries, tools, and documentation
 </Description>
         <PartOf>programming.tools</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib32/</Path>
-            <Path fileType="data">/usr/share/defaults/</Path>
-        </Files>
-    </Package>
-    <Package>
-        <Name>smlnj-docs</Name>
-        <Summary xml:lang="en">Documentation for smlnj</Summary>
-        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
-programming language with associated libraries, tools, and documentation
-</Description>
-        <PartOf>programming.docs</PartOf>
-        <Files>
-            <Path fileType="man">/usr/share/man/</Path>
-            <Path fileType="data">/usr/share/smlnj/</Path>
+            <Path fileType="library">/usr/lib32</Path>
+            <Path fileType="data">/usr/share</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2018-02-06</Date>
+        <Update release="2">
+            <Date>2018-04-07</Date>
             <Version>110.82</Version>
             <Comment>Packaging update</Comment>
-            <Name>Thanos Apostolou</Name>
+            <Name>ThanosApostolou</Name>
             <Email>thanosapostolou@outlook.com</Email>
         </Update>
     </History>
