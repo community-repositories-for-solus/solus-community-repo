@@ -36,44 +36,6 @@
         </Source>
     </Package>
     <Package>
-        <Name>wmctrl</Name>
-        <Summary xml:lang="en">Control your EWMH compliant window manager from command line</Summary>
-        <Description xml:lang="en">Control your EWMH compliant window manager from command line</Description>
-        <PartOf>system.utils</PartOf>
-        <License>GPL-2.0</License>
-        <RuntimeDependencies>
-            <Dependency releaseFrom="49">glibc</Dependency>
-            <Dependency releaseFrom="43">glib2</Dependency>
-            <Dependency releaseFrom="6">libxmu</Dependency>
-            <Dependency releaseFrom="18">libx11</Dependency>
-        </RuntimeDependencies>
-        <History>
-            <Update release="1">
-                <Date>2018-03-16</Date>
-                <Version>1.07</Version>
-                <Comment>Packaging update</Comment>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Update>
-        </History>
-        <BuildHost>solus</BuildHost>
-        <Distribution>Solus</Distribution>
-        <DistributionRelease>1</DistributionRelease>
-        <Architecture>x86_64</Architecture>
-        <InstalledSize>44178</InstalledSize>
-        <PackageSize>17075</PackageSize>
-        <PackageHash>8f2f800847f1e0fbdd6c04a8499f69a3b8dc5dbe</PackageHash>
-        <PackageURI>wmctrl/wmctrl-1.07-1-1-x86_64.eopkg</PackageURI>
-        <PackageFormat>1.2</PackageFormat>
-        <Source>
-            <Name>wmctrl</Name>
-            <Packager>
-                <Name>Thanos Apostolou</Name>
-                <Email>thanosapostolou@outlook.com</Email>
-            </Packager>
-        </Source>
-    </Package>
-    <Package>
         <Name>tclcl-devel</Name>
         <Summary xml:lang="en">Development files for tclcl</Summary>
         <Description xml:lang="en">TclCL (Tcl with classes) is a Tcl/C++ interface used by Mash, vic, vat, rtp_play, ns, and nam. It provides a layer of C++ glue over OTcl.</Description>
@@ -343,14 +305,14 @@ programming language with associated libraries, tools, and documentation</Descri
         <PartOf>programming.tools</PartOf>
         <License>BSD-3-Clause</License>
         <RuntimeDependencies>
-            <Dependency releaseFrom="48">glibc-32bit</Dependency>
+            <Dependency releaseFrom="49">glibc-32bit</Dependency>
         </RuntimeDependencies>
         <History>
-            <Update release="1">
-                <Date>2018-02-06</Date>
+            <Update release="2">
+                <Date>2018-04-07</Date>
                 <Version>110.82</Version>
                 <Comment>Packaging update</Comment>
-                <Name>Thanos Apostolou</Name>
+                <Name>ThanosApostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
             </Update>
         </History>
@@ -358,15 +320,15 @@ programming language with associated libraries, tools, and documentation</Descri
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>36167088</InstalledSize>
-        <PackageSize>10387058</PackageSize>
-        <PackageHash>b0ed837f2e5303b0dee5f30655b84700ca77ec76</PackageHash>
-        <PackageURI>smlnj/smlnj-110.82-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>37139550</InstalledSize>
+        <PackageSize>10560522</PackageSize>
+        <PackageHash>03ca24cec685481c7cbab2177adc165701350873</PackageHash>
+        <PackageURI>smlnj/smlnj-110.82-2-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
             <Name>smlnj</Name>
             <Packager>
-                <Name>Thanos Apostolou</Name>
+                <Name>ThanosApostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
             </Packager>
         </Source>
@@ -475,16 +437,21 @@ programming language with associated libraries, tools, and documentation</Descri
         </Source>
     </Package>
     <Package>
-        <Name>smlnj-docs</Name>
-        <Summary xml:lang="en">Documentation for smlnj</Summary>
-        <Description xml:lang="en">Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML &apos;97
-programming language with associated libraries, tools, and documentation</Description>
-        <PartOf>programming.docs</PartOf>
-        <License>BSD-3-Clause</License>
+        <Name>wmctrl</Name>
+        <Summary xml:lang="en">Control your EWMH compliant window manager from command line</Summary>
+        <Description xml:lang="en">Control your EWMH compliant window manager from command line</Description>
+        <PartOf>system.utils</PartOf>
+        <License>GPL-2.0</License>
+        <RuntimeDependencies>
+            <Dependency releaseFrom="49">glibc</Dependency>
+            <Dependency releaseFrom="43">glib2</Dependency>
+            <Dependency releaseFrom="6">libxmu</Dependency>
+            <Dependency releaseFrom="18">libx11</Dependency>
+        </RuntimeDependencies>
         <History>
             <Update release="1">
-                <Date>2018-02-06</Date>
-                <Version>110.82</Version>
+                <Date>2018-03-16</Date>
+                <Version>1.07</Version>
                 <Comment>Packaging update</Comment>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>
@@ -494,13 +461,13 @@ programming language with associated libraries, tools, and documentation</Descri
         <Distribution>Solus</Distribution>
         <DistributionRelease>1</DistributionRelease>
         <Architecture>x86_64</Architecture>
-        <InstalledSize>969210</InstalledSize>
-        <PackageSize>173521</PackageSize>
-        <PackageHash>37a0ae5cac8ee1fbfba0f36d0ef3ca1695f8f79c</PackageHash>
-        <PackageURI>smlnj/smlnj-docs-110.82-1-1-x86_64.eopkg</PackageURI>
+        <InstalledSize>44178</InstalledSize>
+        <PackageSize>17075</PackageSize>
+        <PackageHash>8f2f800847f1e0fbdd6c04a8499f69a3b8dc5dbe</PackageHash>
+        <PackageURI>wmctrl/wmctrl-1.07-1-1-x86_64.eopkg</PackageURI>
         <PackageFormat>1.2</PackageFormat>
         <Source>
-            <Name>smlnj</Name>
+            <Name>wmctrl</Name>
             <Packager>
                 <Name>Thanos Apostolou</Name>
                 <Email>thanosapostolou@outlook.com</Email>

@@ -1,6 +1,6 @@
 name       : smlnj
 version    : 110.82
-release    : 1
+release    : 2
 source     :
     - http://smlnj.cs.uchicago.edu/dist/working/110.82/config.tgz              : ceff9288e8106d94ce813181d6f4c4da02e4abf808875b27b78d9f6258d016de
     - http://smlnj.cs.uchicago.edu/dist/working/110.82/boot.x86-unix.tgz       : 89e66f5a7fe7c811877d3cec4c1e3e4eb909ecca905248c2bf5f7105e2a4f9a5
@@ -27,11 +27,8 @@ description: |
     Standard ML of New Jersey (abbreviated SML/NJ) is a compiler for the Standard ML '97
     programming language with associated libraries, tools, and documentation
 patterns   :
-    - /usr/share/defaults/
-    - /usr/lib32/
-    - docs:
-        - /usr/share/man/
-        - /usr/share/smlnj/
+    - /usr/share
+    - /usr/lib32
 setup      : |
     if [[ ! -z "${EMUL32BUILD}" ]]; then
         for file in $sources/*.tgz
