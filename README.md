@@ -1,3 +1,5 @@
+# DISCONTINUED
+
 # solus-community-repo
 This is a community repository for Solus OS. It includes only packages which:
   - are not acceptable in Solus official repositories (either for legal or other reasons)
